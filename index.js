@@ -8,6 +8,7 @@ app.use(express.json());
 const employeeArr = [];
 let employeeId = 0;
 
+// Add employee to temporary array
 app.post("/employee", (req, res) => {
   const { name, price } = req.body;
   employeeArr.push({ id: employeeArr.length + 1, name: name, price: price });
