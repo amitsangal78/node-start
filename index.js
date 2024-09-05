@@ -7,7 +7,6 @@ const port = process.env.PORT || 3000;
 app.use(express.json());
 
 const employeeArr = [];
-let employeeId = 0;
 
 // Add employee to temporary array
 app.post("/employee", (req, res) => {
